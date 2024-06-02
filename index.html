@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="vendors/fontawesome/fontcss/all.min.css?_v=20240516160909">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240516160909">
+  <link rel="stylesheet" href="vendors/fontawesome/fontcss/all.min.css?_v=20240602205646">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240602205646">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap&_v=20240516160909" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap&_v=20240602205646" rel="stylesheet">
   
-  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240516160909">-->
-  <link rel="stylesheet" href="vendors/swiper/swiper11-bundle.min.css?_v=20240516160909">
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240602205646">-->
+  <link rel="stylesheet" href="vendors/swiper/swiper11-bundle.min.css?_v=20240602205646">
   
   <title>Home</title>
 </head>
@@ -34,6 +34,14 @@
 
 
  
+      <div id="basket-icon" class="basket-icon">
+  <i class="basket-icon__icon fas fa-shopping-cart"></i>
+  <div class="basket-icon__circle">
+    <span class="count"></span>
+  </div>
+</div>
+ 
+      
       <button class="menu-icon fas fa-bars"></button>
       <nav class="menu">
         <ul class="menu__list">
@@ -104,12 +112,7 @@
       <main class="main main--home">                              
         <!-- TODO - module top -->
           <section class="top" style="background-image: url(img/top-consult.jpg);">  
-            <div id="banner" class="banner"><button class="banner-btn"></button>
-  
-    <p class="banner__text">segvwergvwreg vwregwsdf vvdfbdgvvvv 565vukmigvwr egvwregw sdfv</p>
-  
-</div>
- 
+             
 
             <div class="top__right">
             </div> 
@@ -152,230 +155,96 @@
             </div><!-- container -->      
          
          <div class="container">  
-           <div class="about__buttons">               
+           <div class="about__buttons">                                                  
+             <!--
+<button class="js-popup">
+  <i class="pop-icons pop-icons--footnote fas fa-question-circle"></i>
+  <span class="popup footnote-popup">Popup 4... asergvtrvgtr</span>
+</button>
+-->
 
-               <div class="js-popup" role="button" tabindex="0">
-                 <i class="pop-icons pop-icons--serv fas fa-wrench">
-                   <span class="pop-span pop-span--serv">Unsere Dienstleistungen</span>
-                 </i>
-                 <div class="popup serv-popup serv-pop-content">
+<div class="js-popup" role="button" tabindex="0">
+  <i class="pop-icons pop-icons--serv fas fa-wrench">
+    <span class="pop-span pop-span--serv">Unsere Dienstleistungen</span>
+  </i>
+  <div class="popup serv-popup serv-pop-content">
 
-                   <div class="serv-pop-content__inner">
-                      <div class="serv-pop-content__circle">
-                        <span class="serv-pop-content__sector safari"></span>
-                        <span class="serv-pop-content__sector ie"></span>
-                        <span class="serv-pop-content__sector firefox"></span>
-                        <span class="serv-pop-content__sector chrome"></span>
-                      </div>                      
-                      <ul class="serv-pop-content__items">
-                       <li class="serv-pop-content__item">Chrome</li>
-                       <li class="serv-pop-content__item">Firefox</li>
-                       <li class="serv-pop-content__item">Internet Explorer</li>
-                       <li class="serv-pop-content__item">Safari</li>
-                     </ul>                                             
-                   </div>
+    <div class="serv-pop-content__inner">
+       <div class="serv-pop-content__circle">
+         <span class="serv-pop-content__sector safari"></span>
+         <span class="serv-pop-content__sector ie"></span>
+         <span class="serv-pop-content__sector firefox"></span>
+         <span class="serv-pop-content__sector chrome"></span>
+       </div>                      
+       <ul class="serv-pop-content__items">
+         <li class="serv-pop-content__item">Chrome</li>
+         <li class="serv-pop-content__item">Firefox</li>
+         <li class="serv-pop-content__item">Internet Explorer</li>
+         <li class="serv-pop-content__item">Safari</li>
+       </ul>                                             
+    </div>
                  
-                 </div>
-               </div>        
-             
-               <button class="js-popup">
-                 <i class="pop-icons pop-icons--more fas fa-info-circle">
-                   <span class="pop-span pop-span--more">Information</span>
-                 </i>
-                 <span class="popup more-popup">Popup 3... asergvtrvgtr</span>
-               </button>            
+  </div>
+</div>        
 
-               <button class="js-popup">
-                 <i class="pop-icons pop-icons--processes far fa-sticky-note">
-                   <span class="pop-span pop-span--processes">Arbeitsablauf</span>
-                 </i>
-                 <span class="popup processes-popup">Popup 2...</span>
-               </button>                      
+<button class="js-popup">
+  <i class="pop-icons pop-icons--more fas fa-info-circle">
+    <span class="pop-span pop-span--more">Information</span>
+  </i>
+  <span class="popup more-popup">Popup 3... asergvtrvgtr</span>
+</button>            
 
+<button class="js-popup">
+  <i class="pop-icons pop-icons--processes far fa-sticky-note">
+    <span class="pop-span pop-span--processes">Arbeitsablauf</span>
+  </i>
+  <span class="popup processes-popup">Popup 2...</span>
+</button>             
+               
+ 
            </div><!-- about__buttons --> 
          </div><!-- container -->    
                                 
           </section>
-          
+                    
+          <div id="basket">Корзина:
+  <p><span id="basket-items"></span></p>
+  <button id="delete">Очистить</button>
+</div>
 
-          <div class="container">
-            <button class="btn-one js-lightbox">ЗАМОВИТИ РЕМОНТ</button> 
-            <button class="btn-two js-lightbox">ЗАМОВИТИ РЕМОНТ</button> 
-            <button class="btn-three js-lightbox">Pictures</button> 
-            <!-- pop-up -->
-<div id="lightbox" class="lightbox">
-  <div class="lightbox__layer">
-   
-    <div class="lightbox__modal lightbox__modal--form">
-      <span class="lightbox__close lightbox__close--form far fa-times-circle"></span>
-      
-<!-- TODO - module contacts -->
-<section id="contacts" class="contacts">         
-  <div class="container">                          
-    <div class="contacts__content">                                                                      
-                
-      <div class="form">
-                 
-        <div class="form__info">                    
-          <h2 class="form__title">Contact Us</h2>                            
-          <p class="form__text">Aliquam accumsan, elit ac</p>                                                   
-        </div>        
-         
-        <form action="#" id="form" class="form__body">  
-          <div class="form__flex-alignment">
-                                
-            <div class="form__item">              
-              <label for="formName" class="form__label">Your name*:</label>
-              <input id="formName" type="text" name="name" class="form__input _req">
-              <div class="form__tooltip">
-                <span class="form__tooltip-text">fill in required fields!</span>
-              </div>
-            </div>
-            <div class="form__item">              
-              <label for="formEmail" class="form__label">Your e-mail*:</label>
-              <input id="formEmail" type="text" name="email" class="form__input _req _email">
-              <div class="form__tooltip">
-                <span class="form__tooltip-text">заполните обязательные поля!</span>
-              </div>
-            </div> 
-                        
-          </div><!-- form__flex-alignment -->
-               
-          <!--
-          <div class="form__item">              
-            <div class="form__label">Вид дубления:</div>
-            <div class="options">
-              <div class="options__item">
-                <input id="formRightHanded" checked type="radio" value="right" name="hand" class="options__input"> 
-                <label for="formRightHanded" class="options__label"><span>Химическое</span></label>
-              </div>
-              <div class="options__item">
-                <input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input"> 
-                <label for="formLeftHanded" class="options__label"><span>Растительное</span></label>
-              </div>
-            </div>
-          </div>
-          -->
-               
-          <div class="form__item"> 
-            <label for="formMessage" class="form__label">Your message:</label>
-            <textarea name="message" id="formMessage" class="form__input"></textarea>
-          </div> 
-               
-          <!--
-          <div class="form__item"> 
-            <div class="form__label">Вид фурнитуры:</div>
-            <select name="age" class="select">
-              <option value="Антик" selected>Антик</option>
-              <option value="Сатин">Сатин</option>
-              <option value="Без фурнитуры">Без фурнитуры</option>
-            </select>
-          </div>
-          <div class="form__item"> 
-            <div class="form__label">Ваш эскиз (фото)</div>
-            <div class="file">
-              <div class="file__item">
-                <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
-                <div class="file__button">Эскиз</div>
-              </div> 
-              <div id="formPreview" class="file__preview"></div>
-            </div>                 
-          </div>
-          -->
-               
-          <div class="form__item"> 
-             <div class="checkbox"> 
-                <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
-                <label for="formAgreement" class="checkbox__label"><span>I give my consent to the processing of 
-                       data in accordance with <a href="#">the conditions</a>*</span></label>
-             </div>
-          </div>              
-          <button type="submit" class="form__button">send</button>      
-          <!--<span class="form-button-cancel">cancel</span>--> <!-- TODO - кнопка очистки формы: -->                   
-        </form><!--form__body--> 
-                                                                                                 
-      </div><!-- class="form" -->                        
-                          
-    </div><!-- contacts__content -->    
-  </div><!-- container --> 
-  
-  
-       
-</section><!-- contacts -->  
-<!-- module contacts -->
-          
-          
-          
-        
-    </div>  
-          
-    <div class="lightbox__modal lightbox__modal--style_background">
-    <span class="lightbox__close lightbox__close--style_color far fa-times-circle"></span>
+<div id="cards-box" class="cards-box">
 
-      <div class="mode__links-box links-box testing">
-        <div class="container">
-          <h3 class="testing__title">Call Us</h3> 
-          <p class="info-box__text">
-            <a class="links-box__phone-link" href=""> +012 345 67 89</a>
-            <br>
-            <a class="links-box__phone-link" href=""> +012 345 67 89</a>
-          </p>
-        </div>
-      </div>
-
-    </div>   
-
-    <div class="lightbox__modal lightbox__modal--style_color">
-    <span class="lightbox__close far fa-times-circle"></span>
-
-      <div class="test">        
-        <h3 class="test__title">Call Us</h3> 
-        <p class="test__text">Dnfce7956gmh356gv783n gm83653nv60388u65u35n
-          <a class="" href=""> +012 345 67 89</a><br>         
-          <a class="" href=""> +012 345 67 89</a>
-        </p>        
-      </div>
-
-    </div>   
-
-    <div class="lightbox__modal">
-    <span class="lightbox__close lightbox__close--style_bg far fa-times-circle"></span>
-
-      <img class="lightbox__image" src="img/top-consult.jpg" alt="photo">
-
+  <div class="cards-box__card card">
+    <div class="card__image-box">
+      <img class="card__image" src="img/preview/consult-1.webp" alt="image 1">
     </div>
+    <p class="card__name">Name: <span class="card__span-name">Item 1</span></p>
+    <p class="card__price">Price: <span class="card__span-price">500</span></p>    
+    <button class="card__button">Add to cart</button>
+  </div>
 
-             
-  </div><!--lightbox__layer-->
-</div><!--lightbox-->
-          
-          </div>
-          
-          
-                         
-          
+  <div class="cards-box__card card">
+    <div class="card__image-box">
+      <img class="card__image" src="img/preview/consult-2.webp" alt="image 2">
+    </div>
+    <p class="card__name">Name: <span class="card__span-name">Item 2</span></p>
+    <p class="card__price">Price: <span class="card__span-price">100</span></p>    
+    <button class="card__button">Add to cart</button>
+  </div>  
 
-<div class="container"><div id="acc1">
-            <button class="accordion about__accordion">Section 1</button>
-<div class="panel about__panel">
-  <p>Interested in “developing” your developer skills? In W3Cx’s hands-on Professional Certificate Program, learn how to code the right way by creating Web sites and apps that use the latest Web standards.
-Interested in “developing” your developer skills? In W3Cx’s hands-on Professional Certificate Program, learn how to code the right way by creating Web sites and apps that use the latest Web standards.</p>
+  <div class="cards-box__card card">
+    <div class="card__image-box">
+      <img class="card__image" src="img/preview/consult-3.webp" alt="image 3">
+    </div>
+    <p class="card__name">Name: <span class="card__span-name">Item 3</span></p>
+    <p class="card__price">Price: <span class="card__span-price">200</span></p>    
+    <button class="card__button">Add to cart</button>
+  </div>
+  
 </div>
-
-<button class="accordion about__accordion">Section 2</button>
-<div class="panel about__panel">
-  <p>Interested in “developing” your developer skills? In W3Cx’s hands-on Professional Certificate Program, learn how to code the right way by creating Web sites and apps that use the latest Web standards.</p>
-</div>
-
-<button class="accordion about__accordion">Section 3</button>
-<div class="panel about__panel">
-  <p>Interested in “developing” your developer skills? In W3Cx’s hands-on Professional Certificate Program, learn how to code the right way by creating Web sites and apps that use the latest Web standards.</p>
-</div>            
-          </div></div> 
-
-
-
-
+ 
+ 
+                                  
 
 <!-- TODO - module bg-layer -->
           <section class="bg-layer"> <!--<img class="bg-title__img-bg" src="img/bg.jpg">-->
@@ -564,115 +433,6 @@ Interested in “developing” your developer skills? In W3Cx’s hands-on Profe
             </div><!-- container -->
               <div class="container-swiperNews">
               
-  <!-- https://javascript.info/task/carousel TODO - задача -->
-  <!-- https://plnkr.co/edit/U6VSlPwWpUfHzlRB?p=preview&preview TODO - решение -->
-
-<div id="t-carousel" class="t-carousel">
-  <a class="t-arrow t-prev fas fa-angle-left"></a>
-  <div class="t-carousel__gallery">
-    <ul class="t-carousel__list">
-      <li class="t-carousel__list-item">
-        <img class="t-carousel__preview-img" src="img/preview/consult-1.webp" alt="image">
-        <a class="t-carousel__preview-link" href="">Читати більше</a>
-
-        <span class="t-carousel__subtitle">Корисні поради з обслуговування та 
-              ремонту будівельної техніки<span class="t-carousel__text">Будівельна техніка є невід'ємною
-              частиною будівельних проєктів і вимагає ретельного обслуговування та своєчасного 
-              ремонту для...</span>
-        </span>
-      </li>
-      <li class="t-carousel__list-item">
-        <img class="t-carousel__preview-img" src="img/preview/consult-2.webp" alt="image">
-        <a class="t-carousel__preview-link" href="">Читати більше</a>
-        <span class="t-carousel__subtitle">Своєчасне ТО: запорука надійної та 
-              довготривалої роботи<span class="t-carousel__text">Сучасний темп життя вимагає від нас
-              постійного розвитку та адаптації, особливо, коли йдеться 
-              про технічні новації та обладнання. У світі, де...</span>
-        </span>
-      </li>
-      <li class="t-carousel__list-item">
-        <img class="t-carousel__preview-img" src="img/preview/consult-3.webp" alt="image">
-        <a class="t-carousel__preview-link" href="">Читати більше</a>
-        <span class="t-carousel__subtitle">Корисні поради з обслуговування та ремонту 
-              будівельної техніки<span class="t-carousel__text">Будівельна техніка є невід'ємною 
-              частиною будівельних проєктів і вимагає ретельного обслуговування 
-              та своєчасного ремонту для...</span>
-        </span>
-      </li>
-      <!--
-      <li class="t-carousel__list-item"><img class="t-carousel__preview-img" src="img/preview/fm-4.webp" alt="image"></li>
-      <li class="t-carousel__list-item"><img class="t-carousel__preview-img" src="img/preview/fm-5.webp" alt="image"></li>
-      <li class="t-carousel__list-item"><img class="t-carousel__preview-img" src="img/preview/fm-6.webp" alt="image"></li>
-      <li class="t-carousel__list-item"><img class="t-carousel__preview-img" src="img/preview/fm-13.webp" alt="image"></li>
-      <li class="t-carousel__list-item"><img class="t-carousel__preview-img" src="img/preview/fm-8.webp" alt="image"></li>
-      <li class="t-carousel__list-item"><img class="t-carousel__preview-img" src="img/preview/fm-9.webp" alt="image"></li>
-      <li class="t-carousel__list-item"><img class="t-carousel__preview-img" src="img/preview/fm-10.webp" alt="image"></li>
-    -->
-    </ul>
-  </div>
-  <a class="t-arrow t-next fas fa-angle-right"></a>
-</div>
-
-
-
-
-<!-- TODO - t-modal-img -->
-<div id="t-modal-img" class="t-modal-img">
-  <div class="t-modal-img__layer"><img class="t-modal-img__icon-loading" src="icon/loading.gif" alt="load">   
-    <div class="t-modal-img__image-box">
-      <span class="icon-close-img far fa-times-circle"></span>
-      <img class="t-modal-img__image" src="img/consult-1.jpg" alt="photo">
-    </div>  
-          
-    <div class="t-modal-img__image-box">
-      <span class="icon-close-img far fa-times-circle"></span>
-      <img class="t-modal-img__image" src="img/consult-2.jpg" alt="photo">
-    </div>   
-          
-    <div class="t-modal-img__image-box">
-      <span class="icon-close-img far fa-times-circle"></span>
-      <img class="t-modal-img__image" src="img/consult-3.jpg" alt="photo">
-    </div>
-    <!--     
-    <div class="t-modal-img__image-box">
-      <span class="icon-close-img far fa-times-circle"></span>
-      <img class="t-modal-img__image" src="img/fm-4.jpg" alt="photo">
-    </div>
-    
-    <div class="t-modal-img__image-box">
-      <span class="icon-close-img far fa-times-circle"></span>
-      <img class="t-modal-img__image" src="img/fm-5.jpg" alt="photo">
-    </div>  
-          
-    <div class="t-modal-img__image-box">
-      <span class="icon-close-img far fa-times-circle"></span>
-      <img class="t-modal-img__image" src="img/fm-6.jpg" alt="photo">
-    </div>   
-          
-    <div class="t-modal-img__image-box">
-      <span class="icon-close-img far fa-times-circle"></span>
-      <img class="t-modal-img__image" src="img/fm-13.jpg" alt="photo">
-    </div>
-          
-    <div class="t-modal-img__image-box">
-      <span class="icon-close-img far fa-times-circle"></span>
-      <img class="t-modal-img__image" src="img/fm-8.jpg" alt="photo">
-    </div>
-    
-    <div class="t-modal-img__image-box">
-      <span class="icon-close-img far fa-times-circle"></span>
-      <img class="t-modal-img__image" src="img/fm-9.jpg" alt="photo">
-    </div>
-    
-    <div class="t-modal-img__image-box">
-      <span class="icon-close-img far fa-times-circle"></span>
-      <img class="t-modal-img__image" src="img/fm-10.jpg" alt="photo">
-    </div>
-    -->
-  </div>
-</div>
-
-
               <!-- Swiper -->
   <div id="sliderSwiperNews" class="swiper news__swiper">
     <div class="swiper-wrapper">
@@ -749,34 +509,6 @@ Interested in “developing” your developer skills? In W3Cx’s hands-on Profe
             </div><!-- container --> 
           </section><!-- module mod-tiles -->
           <!-- module mod-tiles -->
-        
-
-
-          
-           
-
-
-
-
-<div class="container"><div id="acc2">
-            <button class="accordion news__accordion">Section 1</button>
-<div class="panel news__panel">
-  <p>Interested in “developing” your developer skills? In W3Cx’s hands-on Professional Certificate Program, learn how to code the right way by creating Web sites and apps that use the latest Web standards.</p>
-</div>
-
-<button class="accordion news__accordion">Section 2</button>
-<div class="panel news__panel">
-  <p>Interested in “developing” your developer skills? In W3Cx’s hands-on Professional Certificate Program, learn how to code the right way by creating Web sites and apps that use the latest Web standards.</p>
-</div>
-
-<button class="accordion news__accordion">Section 3</button>
-<div class="panel news__panel">
-  <p>Interested in “developing” your developer skills? In W3Cx’s hands-on Professional Certificate Program, learn how to code the right way by creating Web sites and apps that use the latest Web standards.</p>
-</div>            
-          </div></div> 
-
-
-
           
           <section class="last-news">   
             <div class="container"> 
@@ -795,16 +527,175 @@ Interested in “developing” your developer skills? In W3Cx’s hands-on Profe
                   Erfolgreicher Abschluss eines ERP-Systemimplementierungsprojekts: Wir haben erfolgreich ein Projekt zur Implementierung eines ERP-Systems für einen großen Kunden aus dem Fertigungssektor abgeschlossen. Das neue System half dabei, Ressourcenmanagementprozesse zu optimieren und die betriebliche Effizienz des Unternehmens zu verbessern. Dieses Projekt bestätigt unsere Fähigkeit, komplexe Lösungen in die Praxis umzusetzen und signifikante Ergebnisse für unsere Kunden zu erzielen.
                 </p>
               </div> 
+
+              
+<!-- btns -->
+<div id="btns" class="btns">
+  <button class="btns__btn btn-strategy js-lightbox">
+    <i class="btns__icon fas fa-chess-knight"></i>
+    <span class="btns__name">strategy</span>
+  </button> 
+  <button class="btns__btn btn-invest js-lightbox">
+    <i class="btns__icon fas fa-money-check-alt"></i>
+    <span class="btns__name">invest</span>
+  </button> 
+  <button class="btns__btn btn-contracts js-lightbox">
+    <i class="btns__icon far fa-regular fa-handshake"></i>
+    <span class="btns__name">contracts</span>
+  </button>                          
+</div>
+
+<!-- lightbox -->
+<div id="lightbox" class="lightbox">
+  <div class="lightbox__layer">
+   
+    <div class="lightbox__modal lightbox__modal--form">
+      <span class="lightbox__close lightbox__close--form far fa-times-circle"></span>
+      
+<!-- TODO - module contacts -->
+<section id="contacts" class="contacts">         
+  <div class="container">                          
+    <div class="contacts__content">                                                                      
+                
+      <div class="form">
+                 
+        <div class="form__info">                    
+          <h2 class="form__title">Contact Us</h2>                            
+          <p class="form__text">Aliquam accumsan, elit ac</p>                                                   
+        </div>        
+         
+        <form action="#" id="form" class="form__body">  
+          <div class="form__flex-alignment">
+                                
+            <div class="form__item">              
+              <label for="formName" class="form__label">Your name*:</label>
+              <input id="formName" type="text" name="name" class="form__input _req">
+              <div class="form__tooltip">
+                <span class="form__tooltip-text">fill in required fields!</span>
+              </div>
+            </div>
+            <div class="form__item">              
+              <label for="formEmail" class="form__label">Your e-mail*:</label>
+              <input id="formEmail" type="text" name="email" class="form__input _req _email">
+              <div class="form__tooltip">
+                <span class="form__tooltip-text">заполните обязательные поля!</span>
+              </div>
+            </div> 
+                        
+          </div><!-- form__flex-alignment -->
+               
+          <!--
+          <div class="form__item">              
+            <div class="form__label">Вид дубления:</div>
+            <div class="options">
+              <div class="options__item">
+                <input id="formRightHanded" checked type="radio" value="right" name="hand" class="options__input"> 
+                <label for="formRightHanded" class="options__label"><span>Химическое</span></label>
+              </div>
+              <div class="options__item">
+                <input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input"> 
+                <label for="formLeftHanded" class="options__label"><span>Растительное</span></label>
+              </div>
+            </div>
+          </div>
+          -->
+               
+          <div class="form__item"> 
+            <label for="formMessage" class="form__label">Your message:</label>
+            <textarea name="message" id="formMessage" class="form__input"></textarea>
+          </div> 
+               
+          <!--
+          <div class="form__item"> 
+            <div class="form__label">Вид фурнитуры:</div>
+            <select name="age" class="select">
+              <option value="Антик" selected>Антик</option>
+              <option value="Сатин">Сатин</option>
+              <option value="Без фурнитуры">Без фурнитуры</option>
+            </select>
+          </div>
+          <div class="form__item"> 
+            <div class="form__label">Ваш эскиз (фото)</div>
+            <div class="file">
+              <div class="file__item">
+                <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+                <div class="file__button">Эскиз</div>
+              </div> 
+              <div id="formPreview" class="file__preview"></div>
+            </div>                 
+          </div>
+          -->
+               
+          <div class="form__item"> 
+             <div class="checkbox"> 
+                <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+                <label for="formAgreement" class="checkbox__label"><span>I give my consent to the processing of 
+                       data in accordance with <a href="#">the conditions</a>*</span></label>
+             </div>
+          </div>              
+          <button type="submit" class="form__button">send</button>      
+          <!--<span class="form-button-cancel">cancel</span>--> <!-- TODO - кнопка очистки формы: -->                   
+        </form><!--form__body--> 
+                                                                                                 
+      </div><!-- class="form" -->                        
+                          
+    </div><!-- contacts__content -->    
+  </div><!-- container --> 
+  
+  
+       
+</section><!-- contacts -->  
+<!-- module contacts -->
+          
+          
+          
+        
+    </div>  
+          
+    <div class="lightbox__modal lightbox__modal--style_background">
+    <span class="lightbox__close lightbox__close--style_color far fa-times-circle"></span>
+
+      <div class="mode__links-box links-box testing">
+        <div class="container">
+          <h3 class="testing__title">Call Us</h3> 
+          <p class="info-box__text">
+            <a class="links-box__phone-link" href=""> +012 345 67 89</a>
+            <br>
+            <a class="links-box__phone-link" href=""> +012 345 67 89</a>
+          </p>
+        </div>
+      </div>
+
+    </div>   
+
+    <div class="lightbox__modal lightbox__modal--style_color">
+    <span class="lightbox__close far fa-times-circle"></span>
+
+      <div class="test">        
+        <h3 class="test__title">Call Us</h3> 
+        <p class="test__text">Dnfce7956gmh356gv783n gm83653nv60388u65u35n
+          <a class="" href=""> +012 345 67 89</a><br>         
+          <a class="" href=""> +012 345 67 89</a>
+        </p>        
+      </div>
+
+    </div>   
+
+    <div class="lightbox__modal">
+    <span class="lightbox__close lightbox__close--style_bg far fa-times-circle"></span>
+
+      <img class="lightbox__image" src="img/top-consult.jpg" alt="photo">
+
+    </div>
+
+             
+  </div><!--lightbox__layer-->
+</div><!--lightbox-->
+ 
             </div><!-- container -->      
                                                            
           </section>
-
-              
-
-          
-            
-          
-
+                                             
 <div class="container-swiperLatest">                            
               <!-- Swiper -->
   <div id="sliderSwiperLatest" class="swiper latest__swiper">
@@ -882,75 +773,151 @@ Interested in “developing” your developer skills? In W3Cx’s hands-on Profe
   
 <section class="questions"> 
 <div class="container">
-  <h2 class="questions__title">Uns wird oft gefragt...</h2><div id="acc3">
-            <button class="accordion other__accordion">"Welche spezifischen Dienstleistungen bieten Sie an?"</button>
-<div class="panel other__panel">
-  <p>Unsere Beratungsfirma bietet eine breite Palette von Dienstleistungen an, darunter strategische Planung, Prozessoptimierung, Geschäftsstrategieentwicklung, Mitarbeiterschulungen und Datenanalyse.</p>
+  <h2 class="questions__title">Uns wird oft gefragt...</h2>
+    <!--
+<div id="acc1">
+  <button class="accordion about__accordion">Section 1</button>
+  <div class="panel about__panel">
+    <p>Interested in “developing” your developer skills? In W3Cx’s hands-on Professional 
+       Certificate Program, learn how to code the right way by creating Web sites and apps that 
+       use the latest Web standards.
+       Interested in “developing” your developer skills? In W3Cx’s hands-on Professional 
+       Certificate Program, learn how to code the right way by creating Web sites 
+       and apps that use the latest Web standards.
+    </p>
+  </div>
+
+  <button class="accordion about__accordion">Section 2</button>
+  <div class="panel about__panel">
+    <p>Interested in “developing” your developer skills? In W3Cx’s hands-on Professional 
+       Certificate Program, learn how to code the right way by creating Web sites and apps 
+       that use the latest Web standards.
+    </p>
+  </div>
+
+  <button class="accordion about__accordion">Section 3</button>
+  <div class="panel about__panel">
+    <p>Interested in “developing” your developer skills? In W3Cx’s hands-on Professional
+       Certificate Program, learn how to code the right way by creating Web sites and apps 
+       that use the latest Web standards.
+    </p>
+  </div>            
+</div>
+-->
+
+<!--
+<div id="acc2">
+  <button class="accordion news__accordion">Section 1</button>
+  <div class="panel news__panel">
+    <p>Interested in “developing” your developer skills? In W3Cx’s hands-on Professional 
+       Certificate Program, learn how to code the right way by creating Web sites and apps 
+       that use the latest Web standards.
+    </p>
+  </div>
+
+  <button class="accordion news__accordion">Section 2</button>
+  <div class="panel news__panel">
+    <p>Interested in “developing” your developer skills? In W3Cx’s hands-on Professional 
+       Certificate Program, learn how to code the right way by creating Web sites and apps 
+       that use the latest Web standards.
+    </p>
+  </div>
+
+  <button class="accordion news__accordion">Section 3</button>
+  <div class="panel news__panel">
+    <p>Interested in “developing” your developer skills? In W3Cx’s hands-on Professional 
+       Certificate Program, learn how to code the right way by creating Web sites and apps 
+       that use the latest Web standards.
+    </p>
+  </div>           
+</div>
+-->
+
+<div id="acc3">
+  <button class="accordion other__accordion">"Welche spezifischen Dienstleistungen bieten Sie an?"</button>
+  <div class="panel other__panel">
+    <p>Unsere Beratungsfirma bietet eine breite Palette von Dienstleistungen an, darunter 
+       strategische Planung, Prozessoptimierung, Geschäftsstrategieentwicklung, 
+       Mitarbeiterschulungen und Datenanalyse.
+    </p>
+  </div>
+
+  <button class="accordion other__accordion">"Welche Erfahrung und Expertise 
+          haben Ihre Berater in unserer Branche?"
+  </button>
+  <div class="panel other__panel">
+    <p>Unsere Berater verfügen über umfangreiche Erfahrung in verschiedenen Branchen, 
+       was es uns ermöglicht, unseren Kunden qualitativ hochwertige Lösungen anzubieten, 
+       die ihren spezifischen Bedürfnissen und Herausforderungen entsprechen.
+    </p>
+  </div>
+
+  <button class="accordion other__accordion">"Welche Ergebnisse haben Sie bereits für 
+          andere Kunden erzielt?"
+  </button>
+  <div class="panel other__panel">
+    <p>Wir sind stolz auf unsere Erfolge bei der Lösung komplexer Aufgaben für Kunden: 
+       Von der Umsatzsteigerung bis zur Optimierung von Arbeitsabläufen bringen unsere 
+       innovativen Ansätze echte Ergebnisse.
+    </p>
+  </div>            
 </div>
 
-<button class="accordion other__accordion">"Welche Erfahrung und Expertise haben Ihre Berater in unserer Branche?"</button>
-<div class="panel other__panel">
-  <p>Unsere Berater verfügen über umfangreiche Erfahrung in verschiedenen Branchen, was es uns ermöglicht, unseren Kunden qualitativ hochwertige Lösungen anzubieten, die ihren spezifischen Bedürfnissen und Herausforderungen entsprechen.</p>
-</div>
 
-<button class="accordion other__accordion">"Welche Ergebnisse haben Sie bereits für andere Kunden erzielt?"</button>
-<div class="panel other__panel">
-  <p>Wir sind stolz auf unsere Erfolge bei der Lösung komplexer Aufgaben für Kunden: Von der Umsatzsteigerung bis zur Optimierung von Arbeitsabläufen bringen unsere innovativen Ansätze echte Ergebnisse.</p>
-</div>            
-          </div></div>
+  </div>
 </section>   
 
-<div class="container">
+          <div class="container">            
             <!-- module tile-preview --> 
-            <div id="tilePreview" class="tile-preview for-effects">           
-              <div class="tile-preview__container">         
+<div id="tilePreview" class="tile-preview for-effects">           
+  <div class="tile-preview__container">         
           
-                <div class="tile-preview__container-left">                                                         
-                  <div class="tile-preview__img-box">                           
-                    <img class="tile-preview__img" src="img/preview/team-bg.webp" alt="colored cube">           
-                  </div>                           
-                  <div class="tile-preview__img-box">                          
-                    <img class="tile-preview__img" src="img/preview/team-1.webp" alt="colored cube">        
-                  </div>                                                                                                       
-                </div> 
+    <div class="tile-preview__container-left">                                                         
+      <div class="tile-preview__img-box">                           
+        <img class="tile-preview__img" src="img/preview/team-bg.webp" alt="colored cube">           
+      </div>                           
+      <div class="tile-preview__img-box">                          
+        <img class="tile-preview__img" src="img/preview/team-1.webp" alt="colored cube">        
+      </div>                                                                                                       
+    </div> 
             
-                <div class="tile-preview__container-right">                                                                        
-                  <div class="tile-preview__img-box">                         
-                    <img class="tile-preview__img" src="img/preview/team-3.webp" alt="colored cube">              
-                  </div>                         
-                  <div class="tile-preview__img-box">                          
-                    <img class="tile-preview__img" src="img/preview/team-2.webp" alt="colored cube">              
-                  </div>                                                                                                       
-                </div>                                                                                       
+    <div class="tile-preview__container-right">                                                                 
+      <div class="tile-preview__img-box">                         
+        <img class="tile-preview__img" src="img/preview/team-3.webp" alt="colored cube">              
+      </div>                         
+      <div class="tile-preview__img-box">                          
+        <img class="tile-preview__img" src="img/preview/team-2.webp" alt="colored cube">              
+      </div>                                                                                                       
+    </div>                                                                                       
             
-              </div>
+  </div>
     
-              <div class="tile-preview__container">         
+  <div class="tile-preview__container">         
           
-                <div class="tile-preview__container-left">                                                         
-                  <div class="tile-preview__img-box">                           
-                    <img class="tile-preview__img" src="img/preview/team-4.webp" alt="colored cube">           
-                  </div>                           
-                  <div class="tile-preview__img-box">                          
-                    <img class="tile-preview__img" src="img/preview/consult-3.webp" alt="colored cube">        
-                  </div>                                                                                                       
-                </div> 
+    <div class="tile-preview__container-left">                                                         
+      <div class="tile-preview__img-box">                           
+        <img class="tile-preview__img" src="img/preview/team-4.webp" alt="colored cube">           
+      </div>                           
+      <div class="tile-preview__img-box">                          
+        <img class="tile-preview__img" src="img/preview/consult-3.webp" alt="colored cube">        
+      </div>                                                                                                       
+    </div> 
             
-                <div class="tile-preview__container-right">                                                                        
-                  <div class="tile-preview__img-box">                         
-                    <img class="tile-preview__img" src="img/preview/consult-1.webp" alt="colored cube">              
-                  </div>                         
-                  <div class="tile-preview__img-box">                          
-                    <img class="tile-preview__img" src="img/preview/consult-2.webp" alt="colored cube">              
-                  </div>                                                                                                       
-                </div>                                                                                       
+    <div class="tile-preview__container-right">                                                               
+      <div class="tile-preview__img-box">                         
+        <img class="tile-preview__img" src="img/preview/consult-1.webp" alt="colored cube">              
+      </div>                         
+      <div class="tile-preview__img-box">                          
+        <img class="tile-preview__img" src="img/preview/consult-2.webp" alt="colored cube">              
+      </div>                                                                                                       
+    </div>                                                                                       
             
-              </div>                                  
-            </div><!-- tile-preview -->
-            <!-- module tile-preview -->
-  
-          </div><!-- container -->
-          <!-- tile-lightbox -->
+  </div>                                  
+</div><!-- tile-preview -->
+<!-- module tile-preview -->
+
+
+<!-- tile-lightbox -->
 <div id="tileLightbox" class="tile-modal">
   <div class="tile-modal__layer">   
     <div class="tile-modal__image-box">
@@ -995,6 +962,8 @@ Interested in “developing” your developer skills? In W3Cx’s hands-on Profe
   </div>
 </div>
 
+          </div><!-- container -->
+          
 
 
  
@@ -1152,9 +1121,9 @@ Interested in “developing” your developer skills? In W3Cx’s hands-on Profe
 </footer>
   
     </div><!-- wrapper -->
-    <script src="vendors/swiper/swiper11-bundle.min.js?_v=20240516160909"></script>
-    <!--<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240516160909"></script>-->
-    <script src="js/app.min.js?_v=20240516160909"></script> 
+    <script src="vendors/swiper/swiper11-bundle.min.js?_v=20240602205646"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240602205646"></script>-->
+    <script src="js/app.min.js?_v=20240602205646"></script> 
 
 <script>
     
